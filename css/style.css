@@ -1,0 +1,263 @@
+/* ── RESET ── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ── BASE ── */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 15px;
+    color: #1310d8;
+    background: #f0f2f5;
+    padding: 2rem;
+}
+
+/* ── WRAPPER ── */
+.cv-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(236, 227, 227, 0.877);
+}
+
+/* ── HEADER ── */
+.cv-header {
+    background: #1a2e4a;
+    color: rgb(15, 10, 10);
+    padding: 2rem 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.cv-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #a8c4e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #1a2e4a;
+    flex-shrink: 0;
+}
+
+.cv-header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 4px;
+}
+
+.cv-header p {
+    font-size: 14px;
+    color: #3b94ee;
+}
+
+/* ── BARRE CONTACT ── */
+.cv-contact-bar {
+    background: #bfccdd;
+    padding: 0.6rem 2.5rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cv-contact-bar span {
+    font-size: 12px;
+    color: rgb(20, 23, 27);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.cv-contact-bar .icon {
+    color: #0d0f11;
+    font-size: 13px;
+}
+
+/* ── BODY GRID ── */
+.cv-body {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    background: white;
+}
+
+/* ── COLONNE GAUCHE ── */
+.cv-left {
+    background: #eef3f9;
+    padding: 1.8rem 1.4rem;
+    border-right: 1px solid #dde6f0;
+    min-width: 0;
+}
+
+/* ── COLONNE DROITE ── */
+.cv-right {
+    padding: 1.8rem 2rem;
+    min-width: 0;
+}
+
+/* ── TITRES DE SECTION ── */
+.sec-title {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #181f25;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #c8d8e8;
+}
+
+.sec-block {
+    margin-bottom: 1.6rem;
+}
+
+.sec-block:last-child {
+    margin-bottom: 0;
+}
+
+/* ── CONTACT (colonne gauche) ── */
+.contact-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.contact-icon {
+    color: #1a2e4a;
+    font-size: 13px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.contact-row span:last-child {
+    font-size: 12px;
+    color: #333;
+    line-height: 1.6;
+    word-break: break-word;
+    min-width: 0;
+}
+
+/* ── TAGS COMPÉTENCES ── */
+.tag-group {
+    margin-bottom: 10px;
+}
+
+.tag-group-label {
+    font-size: 11px;
+    color: #5a7a9a;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.tag {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.tag-dark {
+    background: #d5dce6;
+    color: #0a0b0c;
+}
+
+.tag-light {
+    background: #dce8f5;
+    color: #1a2e4a;
+}
+
+/* ── LISTES ── */
+.cv-li {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.6;
+    padding: 2px 0 2px 14px;
+    position: relative;
+}
+
+.cv-li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #1a2e4a;
+    font-size: 10px;
+    top: 4px;
+}
+
+/* ── EXPÉRIENCES ── */
+.exp-block {
+    margin-bottom: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.exp-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.exp-period {
+    font-size: 11px;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 2px;
+}
+
+.exp-company {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a2e4a;
+    margin-bottom: 2px;
+}
+
+.exp-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+/* ── MOTIVATIONS ── */
+.motive-p {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.75;
+    margin-bottom: 10px;
+}
+
+.motive-p:last-child {
+    margin-bottom: 0;
+}
+
+/* ── COMPÉTENCES TRANSFÉRABLES ── */
+.skill-group {
+    margin-bottom: 10px;
+}
+
+.skill-group:last-child {
+    margin-bottom: 0;
+}
+
+.skill-cat {
+    font-size: 11px;
+    font-weight: 600;
+    color: #5a7a9a;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 4px;
+}
